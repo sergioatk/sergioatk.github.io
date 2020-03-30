@@ -1,6 +1,7 @@
 const $tablero = document.querySelector('#tablero');
 const $slots = $tablero.querySelectorAll('.cuadro');
-const $botonReplay = document.querySelector('#replay')
+const $botonReplay = document.querySelector('#replay');
+const $cartelGanaste = document.querySelector('#cartel-ganaste');
 const cartasDeJuego = ['azul', 'azul', 'naranja', 'naranja',
  'dorado', 'dorado', 'violeta', 'violeta'];
 let score = document.querySelector('.score').querySelector('strong');
@@ -25,10 +26,13 @@ $botonReplay.onclick = function() {
     
 } 
 
-function armarTablero(espaciosTablero, array) {
+function evaluarFinDeJuego() {
+    if (document.querySelectorAll('.cuadro').length === 0) {
+        $cartelGanaste.style.display = 'inline';
+    }
+}
 
-    
-    
+function armarTablero(espaciosTablero, array) {
 
     array.forEach(function(carta, i){    
 
@@ -81,6 +85,7 @@ function evaluarInputUsuario(array) {
             seleccion = [];
             round++;
             score.textContent = round.toString();
+            evaluarFinDeJuego()
             return
         }
         
@@ -94,6 +99,7 @@ function evaluarInputUsuario(array) {
                 array[i].classList.add('cell', 'completo');  
                // array[i].classList.add('cuadro', 'cell', 'completo');  
                 array[i].textContent = 'OK'  
+                evaluarFinDeJuego();
             })  
 
             seleccion = [];

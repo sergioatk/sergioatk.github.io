@@ -41,5 +41,11 @@
     background: grey;
   }
 
+  #cartel-ganaste {
+    display: none;
+    background-color: red;
+    color: black;
+  }
+
 
   
