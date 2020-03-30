@@ -1,6 +1,7 @@
 const $tablero = document.querySelector('#tablero');
 const $slots = $tablero.querySelectorAll('.cuadro');
 const $botonReplay = document.querySelector('#replay');
+const $botonAyuda = document.querySelector('#ayuda');
 const $cartelGanaste = document.querySelector('#cartel-ganaste');
 const cartasDeJuego = ['azul', 'azul', 'naranja', 'naranja',
  'dorado', 'dorado', 'violeta', 'violeta'];
@@ -26,6 +27,37 @@ $botonReplay.onclick = function() {
     armarTablero($slots, cartasMezcladas);
     
 } 
+
+$botonAyuda.onclick = function() {
+
+    let cuadrosRestantes = document.querySelectorAll('.cuadro');
+
+    for (let i = 0; i < cuadrosRestantes.length; i++) {
+
+        
+
+        cuadrosRestantes[i].style.backgroundColor = '';
+    }
+
+
+
+    setTimeout(function() {
+        for (let i = 0; i < cuadrosRestantes.length; i++) {
+
+        
+
+            cuadrosRestantes[i].style.backgroundColor = 'black';
+        }
+    }, 200)
+
+    
+
+
+
+        
+
+     
+}
 
 function evaluarFinDeJuego() {
     if (document.querySelectorAll('.cuadro').length === 0) {
