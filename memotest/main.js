@@ -18,6 +18,8 @@ manejarEventos($tablero);
 $botonReplay.onclick = function() {
     // reiniciarTablero($slots, cartasMezcladas);
     seleccion = [];
+    round = 0;;
+    score.textContent = round.toString();
     cartasMezcladas = mezclarCartas(cartasDeJuego);
     armarTablero($slots, cartasMezcladas);
     
