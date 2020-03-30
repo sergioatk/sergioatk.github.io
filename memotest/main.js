@@ -48,7 +48,7 @@ $botonAyuda.onclick = function() {
 
             cuadrosRestantes[i].style.backgroundColor = 'black';
         }
-    }, 400);
+    }, 200);
 
     
 
