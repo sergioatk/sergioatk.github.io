@@ -21,6 +21,7 @@ $botonReplay.onclick = function() {
     seleccion = [];
     round = 0;;
     score.textContent = round.toString();
+    $cartelGanaste.style.display = 'none';
     cartasMezcladas = mezclarCartas(cartasDeJuego);
     armarTablero($slots, cartasMezcladas);
     
