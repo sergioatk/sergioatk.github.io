@@ -1,0 +1,45 @@
+/* .borde {
+    border: thin;
+} */
+
+
+
+.container {
+    height: 90vh;
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px 10px; 
+    
+  }
+  .cell {
+    color: white;
+    background-color: black;
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem;
+    transition: all 0.2s ease-in;
+    
+  }
+
+  .azul {
+    background: deepskyblue;
+  }
+  .naranja {
+    background: orangered;
+  }
+  
+  .dorado {
+    background: gold;
+  }
+  .violeta {
+    background: blueviolet;
+  }
+
+  .completo {
+    background: grey;
+  }
+
+
+  
