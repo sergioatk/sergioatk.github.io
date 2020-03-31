@@ -13,6 +13,7 @@ score.textContent = '0'
 let seleccion = [];
 
 let cartasMezcladas = mezclarCartas(cartasDeJuego);
+let cuadrosRestantes;
 
 armarTablero($slots, cartasMezcladas);
 manejarEventos($tablero);
@@ -28,35 +29,26 @@ $botonReplay.onclick = function() {
     
 } 
 
+
+
 $botonAyuda.onclick = function() {
 
-    let cuadrosRestantes = document.querySelectorAll('.cuadro');
+    cuadrosRestantes = document.querySelectorAll('.cuadro');
 
     for (let i = 0; i < cuadrosRestantes.length; i++) {
-
-        
 
         cuadrosRestantes[i].style.backgroundColor = '';
     }
 
 
-
     setTimeout(function() {
         for (let i = 0; i < cuadrosRestantes.length; i++) {
-
-        
 
             cuadrosRestantes[i].style.backgroundColor = 'black';
         }
     }, 200);
 
-    
-
-
-
-        
-
-     
+   
 }
 
 function evaluarFinDeJuego() {
@@ -149,27 +141,12 @@ function darColor(array, color) {
 
 function quitarColor (array) {
 
-        // setTimeout(function(array) {
-        //     array[0].style.backgroundColor = 'black';
-        //     array[1].style.backgroundColor = 'black'; 
-        // }, 350)
-
-        setTimeout(function() {
+   setTimeout(function() {
             array.forEach(function(carta, i) {
                 array[i].style.backgroundColor = 'black';
             }) 
-        }, 350)
-
-
-
-        
-        
-    
+        }, 350)  
 }
-
-
-
-
 
 
 function mezclarCartas(array) {
@@ -183,3 +160,4 @@ function mezclarCartas(array) {
 
     return array;
 }
+
