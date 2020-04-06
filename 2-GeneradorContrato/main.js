@@ -44,5 +44,4 @@ $botonGenerar.onclick = () => {
         $resultado.classList.remove('oculto');
         $divCargando.classList.add('oculto')
     }, 2500)
-
-    
+}
