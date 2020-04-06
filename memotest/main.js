@@ -7,61 +7,19 @@ const cartasDeJuego = ['azul', 'azul', 'naranja', 'naranja',
  'dorado', 'dorado', 'violeta', 'violeta'];
 let score = document.querySelector('.score').querySelector('strong');
 let round = 0;
-
 score.textContent = '0'
-
 let seleccion = [];
-
 let cartasMezcladas = mezclarCartas(cartasDeJuego);
 let cuadrosRestantes;
 
 armarTablero($slots, cartasMezcladas);
 manejarEventos($tablero);
 
-$botonReplay.onclick = function() {
-    // reiniciarTablero($slots, cartasMezcladas);
-    seleccion = [];
-    round = 0;;
-    score.textContent = round.toString();
-    $cartelGanaste.style.display = 'none';
-    cartasMezcladas = mezclarCartas(cartasDeJuego);
-    armarTablero($slots, cartasMezcladas);
-    
-} 
-
-
-
-$botonAyuda.onclick = function() {
-
-    cuadrosRestantes = document.querySelectorAll('.cuadro');
-
-    for (let i = 0; i < cuadrosRestantes.length; i++) {
-
-        cuadrosRestantes[i].style.backgroundColor = '';
-    }
-
-
-    setTimeout(function() {
-        for (let i = 0; i < cuadrosRestantes.length; i++) {
-
-            cuadrosRestantes[i].style.backgroundColor = 'black';
-        }
-    }, 200);
-
-   
-}
-
-function evaluarFinDeJuego() {
-    if (document.querySelectorAll('.cuadro').length === 0) {
-        $cartelGanaste.style.display = 'inline';
-    }
-}
-
 function armarTablero(espaciosTablero, array) {
 
     array.forEach(function(carta, i){    
 
-        espaciosTablero[i].className = '';
+        espaciosTablero[i].className = ''; // esto lo reinicia en caso que ya esté armado
         espaciosTablero[i].classList.add('cuadro', 'cell'); 
         espaciosTablero[i].textContent = ''
 
@@ -73,40 +31,30 @@ function armarTablero(espaciosTablero, array) {
 function manejarEventos($tablero) {
     
     $tablero.onclick = function(e) {
-
-        const $cuadro = e.target;
-        
-        if ($cuadro.classList.contains('cuadro')) {
-            
-            manejarClickUsuario($cuadro);
-            
+        const $cuadro = e.target;     
+        if ($cuadro.classList.contains('cuadro')) {      
+            manejarClickUsuario($cuadro);    
         };
     }
 }
 
 function manejarClickUsuario(cuadroElegido) {
-
     seleccion.push(cuadroElegido); 
-    
     evaluarInputUsuario(seleccion);      
 }
 
 function evaluarInputUsuario(array) {
-
     darColor(array, '');
+    if (array.length === 2) {   
 
-    if (array.length === 2) {  
-        
         if (array[0].id === array[1].id) {
-            
-            
-            quitarColor(array);
+          quitarColor(array, 'black');
             seleccion = [];   
             return
         }
         
         if (array[0].className != array[1].className) {
-            quitarColor(array);
+            quitarColor(array, 'black');
             seleccion = [];
             round++;
             score.textContent = round.toString();
@@ -115,10 +63,8 @@ function evaluarInputUsuario(array) {
         }
         
         if (array[0].className === array[1].className) {
-
             round++;
             score.textContent = round.toString();
-
             array.forEach(function(carta, i){
                 array[i].className = '';
                 array[i].classList.add('cell', 'completo');  
@@ -139,14 +85,46 @@ function darColor(array, color) {
     })
 }
 
-function quitarColor (array) {
+function quitarColor (array, color) {
 
-   setTimeout(function() {
-            array.forEach(function(carta, i) {
-                array[i].style.backgroundColor = 'black';
-            }) 
-        }, 350)  
+    setTimeout(function() {
+             array.forEach(function(carta, i) {
+                 array[i].style.backgroundColor = color;
+             }) 
+         }, 350)  
+ }
+
+$botonReplay.onclick = function() {
+    seleccion = [];
+    round = 0;;
+    score.textContent = round.toString();
+    $cartelGanaste.style.display = 'none';
+    cartasMezcladas = mezclarCartas(cartasDeJuego);
+    armarTablero($slots, cartasMezcladas);
+    
+} 
+
+
+
+$botonAyuda.onclick = function() {
+    cuadrosRestantes = document.querySelectorAll('.cuadro');
+    for (let i = 0; i < cuadrosRestantes.length; i++) {
+          cuadrosRestantes[i].style.backgroundColor = '';
+    }
+
+    setTimeout(function() {
+        for (let i = 0; i < cuadrosRestantes.length; i++) {
+            cuadrosRestantes[i].style.backgroundColor = 'black';
+        }
+    }, 200);
 }
+
+function evaluarFinDeJuego() {
+    if (document.querySelectorAll('.cuadro').length === 0) {
+        $cartelGanaste.style.display = 'inline';
+    }
+}
+
 
 
 function mezclarCartas(array) {
