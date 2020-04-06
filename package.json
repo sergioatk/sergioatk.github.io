@@ -21,5 +21,8 @@
   "homepage": "https://github.com/sergioatk/sergioatk.github.io#readme",
   "devDependencies": {
     "cypress": "^4.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1"
   }
 }
