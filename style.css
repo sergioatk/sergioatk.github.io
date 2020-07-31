@@ -22,7 +22,12 @@ body {
     line-height: 2;
 }
 
-button {
+.btn {
     margin: auto;
+}
+
+.col {
+    padding: 10px;
+    
 }
 
