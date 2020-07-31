@@ -1,9 +1,28 @@
-#contenedor {
-    background-color: #4b5d67;
-    margin: auto;
+nav {
+    color: white;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+
+#cuerpo-pag {
+    background-color: #404b69;
+    
+    color: white;
+    
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+body {
+    line-height: 2;
+}
+
+button {
+    margin: auto;
+}
+
