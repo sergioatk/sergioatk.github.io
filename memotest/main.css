@@ -2,7 +2,9 @@
     border: thin;
 } */
 
-
+body {
+  background-color: black;
+}
 
 .container {
     height: 90vh;
