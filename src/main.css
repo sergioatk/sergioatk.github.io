@@ -1,3 +1,17 @@
 .oculto {
     display: none;
 }
+
+.boton {
+    text-align: right;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cuerpo {
+    margin: 50px 200px 50px 200px;
+}
