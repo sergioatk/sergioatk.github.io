@@ -1,5 +1,15 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #bae6dc !important;
+    color: aliceblue;
+}
 .oculto {
     display: none;
+}
+
+#navbar {
+    text-align: center;
+    background-color: #8bc9bb !important;
 }
 
 .boton {
@@ -8,10 +18,11 @@
     margin-left: 10px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
+#olas {
+    position: relative;
 }
 
 .cuerpo {
     margin: 50px 200px 50px 200px;
 }
+
