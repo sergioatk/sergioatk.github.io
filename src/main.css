@@ -1,28 +1,31 @@
 body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #bae6dc !important;
-    color: aliceblue;
+    color: cornsilk;;
+    background-color: #02475e;
+    
+}
+
+h1 {
+    text-align: center;
 }
 .oculto {
     display: none;
 }
-
-#navbar {
-    text-align: center;
-    background-color: #8bc9bb !important;
+.navegacion {
+    background-color: #687980;
+    font-size: 2em;
+    
 }
 
-.boton {
-    text-align: right;
-    margin-top: 10px;
-    margin-left: 10px;
+.container {
+    border: solid crimson;
+    padding: 60px; 
 }
 
-#olas {
-    position: relative;
-}
-
-.cuerpo {
-    margin: 50px 200px 50px 200px;
-}
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+  }
 
