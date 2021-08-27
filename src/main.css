@@ -10,6 +10,7 @@ body {
 
 .container {
     margin-top: 20px;
+    
 
     border-radius: 12px;
     background-color: #68876b;
@@ -28,6 +29,10 @@ h2 {
     margin: 20px 5px 20px 5px;
     
 }
+
+h3 {
+    margin-top: 10px;
+}
 .oculto {
     display: none;
 }
@@ -44,7 +49,15 @@ p {
     text-align: center;
 }
 
+.notas {
+    color: black;
+    font-size: 0.5em;
+    font-style: italic;
+}
 
+hr {
+    margin: 10px 20% 0 20%;
+}
 
 nav a{
     font-size: 2.2em;
