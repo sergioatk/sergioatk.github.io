@@ -17,127 +17,99 @@
     integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
     crossorigin="anonymous"></script>
 
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" type="text/css" media="screen" href="/src/main.css">
 </head>
 
 <body>
 
-  <div class="row nav">
-    
-      <nav>
-        <div class="row text-center">
-          
-          <a href="#about-me" class="col col-sm-4">
-            About me
-          </a>
-          <a href="" class="col col-sm-4">
-            Projects
-          </a>
-          <a href="https://github.com/sergioatk" id="link-github" class="col col-sm-4">
-            GitHub
-          </a>
-        </div>
-      </nav>
-   
-  </div>
+  <header class="hero">
+    <div class="container">
+      <h1 class="primary-title">Hi! My name is <span id="nombre">Sergio</span>, and I'm a <span>JavaScript Developer</span></h1>
+     
+      <a href="#projects" class="btn">projects</a>
+      <a href="#about-me" class="btn">about me</a>
+      <a href="https://www.linkedin.com/in/sergiotkaczek/" class="btn">linkedin</a>
+      <a href="https://github.com/sergioatk" class="btn">github</a>
+      <a href="#contact" class="btn">contact</a>
 
-  <div class="container">
-    <div class="row" id="about-me">
-
-
-      <div class="col">
-
-        <h2>About me</h2>
-
-
-        <p>Hi! My same is Sergio Tkaczek. I am a JavaScript developer.</p>
-
-        <p>I'm training both on Frontend and Backend tecnologies such as Vanilla Js, HTML, CSS; React Js. Node and
-          Express with template engines.</p>
-
-        <p>Concious about good progaming practices, I am aware about the importance of testing, both unit and end-to-end
-          and SOLID principles.</p>
-
-        <p>I am thrilled about the grat challenge of building, with my spirit and eyes wide open to keep learning
-          everyday!</p>
-      </div>
     </div>
+  </header>
 
-    <div class="row container-otro">
+  <main>
+    <section class="my-projects" id="projects">
+      <div class="container spacing">
 
-      <div class="row">
-        <div class="col ">
-          <h2>Projects</h2>
+        <div class="split">
+          <h2 class="titulo-section">My projects</h2>
 
+          <article class="product">
+            <img src="./img/screen-memo.png" alt="" class="product__image">
+            <h3 class="product__title">CRUD - Football Clubs</h3>
+            <p class="product__description">A crud aplication, lets Create, Reach, Update and Delete :)</p>
+            <p class="product__description">Node, Express and Handlebars Template Engine.</p>
+            <a href="" class="btn">APP DEMO</a>
+            <a href="" class="btn">GITHUB REPO</a>
+          </article>
 
-          <div class="row">
-            <div class="col-12 col-sm-6 text-center">
-              <h3>Pokedex - Fetch API</h3>
-              <p>Fetch resources from the pokeapi rest API!</p>
-              <p class="notas">Fetch API, ESM, async/await, DOM manipulation.</p>
-              <a href="https://github.com/sergioatk/pokedex" class="text-center">GitHub Repo</a> <br>
-              <a href="https://estudiotkaczek.com/pokedex/">APP</a>
-            </div>
-            <div class="col-12 col-sm-6"><img src="./img/screen-pokedex.png" alt="pokedex project image"></div>
-          </div>
+          <article class="product">
+            <img src="./img/screen-pokedex.png" alt="" class="product__image">
+            <h3 class="product__title">App - Pokedex</h3>
+            <p class="product__description">An app for looking up some Pokemon data.</p>
+            <p class="product__description">Fetch API, ESM, async/await, DOM manipulation.</p>
+            <a href="https://estudiotkaczek.com/pokedex/" class="btn">POKEDEX</a>
+            <a href="https://github.com/sergioatk/pokedex" class="btn">GITHUB REPO</a>
+          </article>
 
+          <article class="product">
+            <img src="./img/screen-simon.png" alt="" class="product__image">
+            <h3 class="product__title">Game - Simon Says</h3>
+            <p class="product__description">A memory game about replicating the machine sequence.</p>
+            <p class="product__description">Ecma Script Modules, Vanilla Js, DOM manipulation.</p>
+            <a href="http://estudiotkaczek.com/simon-says/" class="btn">GAME</a>
+            <a href="https://github.com/sergioatk/simon-says" class="btn">GITHUB REPO</a>
+          </article>
 
-
-          <div class="row">
-            <br>
-            <div class="col">
-              <hr>
-            </div>
-          </div>
-
-          <div class="row proyecto">
-            <div class="col col-sm-6 text-center">
-              <h3>Simon Says - Game</h3>
-              <p>Another classic. Try to remember the sequence!</p>
-              <p class="notas">Ecma Script Modules, Vanilla Js, DOM manipulation.</p>
-              <a href="https://github.com/sergioatk/simon-says" class="text-center">GitHub Repo</a> <br>
-              <a href="http://estudiotkaczek.com/simon-says/">Play Game</a>
-
-
-            </div>
-            <div class="col-12 col-sm-6"><img src="./img/screen-simon.png" alt="simon says game project image"></div>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <br>
-          <div class="col">
-            <hr>
-          </div>
-        </div>
-
-
-        <div class="row">
-          <div class="col-12 col-sm-6 text-center">
-            <h3>Memotest - Game</h3>
-            <p>A classic game. The player must find the pair of cards.</p>
-            <a href="https://github.com/sergioatk/memotest-game" class="text-center">GitHub Repo</a> <br>
-            <a href="http://estudiotkaczek.com/memotest-game/">Play Game</a>
-
-
-          </div>
-          <div class="col-12 col-sm-6"><img src="./img/screen-memo.png" alt="memotest game project image"></div>
+          <article class="product">
+            <img src="./img/screen-memo.png" alt="" class="product__image">
+            <h3 class="product__title">Game - Memotest</h3>
+            <p class="product__description">A simple game, you got to find the pairs of cards</p>
+            <a href="http://estudiotkaczek.com/memotest-game/" class="btn">GAME</a>
+            <a href="https://github.com/sergioatk/memotest-game" class="btn">GITHUB REPO</a>
+          </article>
 
         </div>
+      </div>
+    </section>
+
+
+    <section class="about-me" id="about-me">
+      <div class="container spacing">
+        <h2 class="titulo-section">About me</h2>
+        <p>Hi! My name is Sergio, and I'm a JavaScript Developer. As of now, I'm learning both Frontend and Backend Technologies, such as: HTML5, CSS, JS; Node and Express, Template Engine Rendering, Fetch API, Async / Await, Ecma Script Modules, End to End Testing and Unit Testing, among others.</p>
+        <p>I'm trhilled of the challenge of learning new skills, and a open mind to keep learning from others and improving myself everyday.</p>
+        <p>I love to work in teams, as I think when done right, It's the most effective way to achieve goals.</p>
 
 
       </div>
+    </section>
 
+    <section class="my-projects" id="contact">
+      <div class="container spacing">
+        <h2 class="titulo-section">Contact</h2>
+        <p>
+          Email: <a href="mailto:sergioatk@gmail.com">sergioatk@gmail.com</a> <br>
+          Linkedin: <a href="https://www.linkedin.com/in/sergiotkaczek/">Profile</a>
+        </p>
+      </div>
 
-    </div>
-
-
-
-
-  </div>
-  </div>
-
+    </section>
+  </main>
 
   <script src="script.js"></script>
 
