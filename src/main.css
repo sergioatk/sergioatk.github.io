@@ -5,7 +5,7 @@
 }
 
 span {
-    color: #e9542f;
+    color: #501782;
     font-weight: 700;
 }
 
@@ -29,6 +29,7 @@ h3,
 p {
     margin: 0;
     font-size: 1.5em;
+    text-align: center;
 }
 
 h1 {
@@ -38,12 +39,26 @@ h1 {
 
 h2 {
     padding-bottom: .3em;
+    font-weight: 700;
+}
+
+h3 {
+    color: white;
+    font-weight: 700;
 }
 
 .container {
     width: 85%;
     max-width: 65em;
     margin: 0 auto;
+}
+
+.image-container {
+    height: 150px;
+}
+
+.project-description {
+    height: 580;
 }
 
 .btn {
@@ -56,7 +71,7 @@ h2 {
     padding: .5em 1.25em;
     margin-right: .5em;
     margin-bottom: .5em;
-    background: var(--clr-accent, blue);
+    background: var(--clr-accent, #501782);
     border-radius: .25em;
     transition: 
         transform 250ms ease-in-out,
@@ -64,9 +79,9 @@ h2 {
     
 }
 
-#nombre {
-    color: #0a69a9;
-}
+/* #nombre {
+    color: #6CC221;
+} */
 .btn:hover,
 .btn:focus {
     color: var(--clr-text, white);
@@ -97,8 +112,10 @@ section {
 
 .hero {
     color: white;
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    background: rgb(119,34,195);
+background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
+    /* background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
     background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
@@ -114,7 +131,7 @@ section {
 
 .split {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     gap: 1em;
     justify-content: center;
 
@@ -127,9 +144,18 @@ section {
     
 }
 
+#about-me h2{
+    color: white;
+}
+#about-me {
+    color: white;
+    background: rgb(119,34,195);
+background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
+}
+
 .product {
-    background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(190,187,45,1) 100%);
+    background: rgb(119,34,195);
+background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
     text-align: center;
     border-radius: 10px;
     padding: 1em;
