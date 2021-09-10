@@ -1,7 +1,142 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
+}
+
+body {
+    background-color: #082032;
+    color: b8bed6;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden
+    
+}
+
+nav {
+    background-color: #2C394B;
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    font-size: 1.5em;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0 10px;
+    
+    
+}
+
+nav a{
+    width: 120px;
+    margin: 0 20px;
+    color: #b8bed6;
+    text-decoration: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1.5;
+    color: #daddeb;
+}
+
+button {
+    border-radius: 10px;
+    height: 50px;
+    background-color: #d8d1e0;
+}
+
+button:hover {
+    background-color: #8f8996;
+    color: white;
+}
+
+hr {
+    border-top: 5px;
+    position: relative;
+    z-index: -1;
+}
+
+.hidden {
+    display: none;
+}
+
+.project {
+    background-color: #d8d1e0;
+    color: black;
+    width: 90vw;
+    margin: 10px 20px;
+    padding: 10px 0 10px;
+    border-radius: 10px;
+}
+
+.project img {
+    width: 70%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.project button {
+    margin-bottom: 10px;
+}
+
+#contact {
+    margin: 10px 0 10px;
+}
+
+#contact button a {
+    height: 30px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    nav {
+        height: 50px;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.2em;
+    }
+    nav a {
+        width: 30vw;
+    }
+
+    #container {
+        margin-top: 100px;
+    }
+
+    #profile-pic {
+        width: 100px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+    }
+
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    
+
+    .project-button {
+        flex: 50%;
+    }
+
+    
+}
+
+/* .prueba {
+    background-color: red;
+    height: 400px;
+    width: 70vw;
+    margin: 30px auto
 }
 
 span {
@@ -82,8 +217,8 @@ h3 {
 /* #nombre {
     color: #6CC221;
 } */
-.btn:hover,
-.btn:focus {
+
+/* .btn:hover, .btn:focus {
     color: var(--clr-text, white);
     transform: scale(1.1);
     opacity: .9;
@@ -106,56 +241,53 @@ h3 {
 section {
     padding: 2em 0;
 }
-.spacing > * + * {
+
+.spacing>*+* {
     margin-top: var(--spacer, 2rem);
 }
 
 .hero {
     color: white;
-    background: rgb(119,34,195);
-background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
+    background: rgb(119, 34, 195);
+    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%); */
     /* background: rgb(34,193,195);
     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 5em 0 3em;
-    
+    padding: 5em 0 3em; */
     /* background-image:
         url(../img/background-code.jpg),
         radial-gradient(#111, #444);
     background-size: 10%;
     background: whitesmoke; */
+/* } */
 
-}
-
-.split {
+/* .split {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
     gap: 1em;
     justify-content: center;
-
-    
 }
 
-.split > * {
+.split>* {
     flex-basis: 30%;
     min-width: 15em;
-    
 }
 
-#about-me h2{
+#about-me h2 {
     color: white;
 }
+
 #about-me {
     color: white;
-    background: rgb(119,34,195);
-background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
+    background: rgb(119, 34, 195);
+    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%);
 }
 
 .product {
-    background: rgb(119,34,195);
-background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%);
+    background: rgb(119, 34, 195);
+    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%);
     text-align: center;
     border-radius: 10px;
     padding: 1em;
@@ -164,10 +296,11 @@ background: linear-gradient(0deg, rgba(119,34,195,1) 0%, rgba(117,131,158,1) 71%
 p {
     margin-bottom: 1em;
 }
+
 a {
-    
     color: black;
     /* background: rgba(34,193,195,1); */
-    text-decoration: none; 
-    
-}
+    /* text-decoration: none;
+} */
+
+ 
