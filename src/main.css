@@ -2,13 +2,33 @@
     box-sizing: border-box;
 }
 
+.projects-section {
+    width: 700px;
+    margin: auto;
+}
+#container {
+    width: 700px;
+    margin: auto;
+}
+
+iframe {
+    
+}
+
+/* section {
+    #about-me {
+        width: 700px;
+        margin: auto;
+    }
+} */
 body {
     background-color: #082032;
     color: b8bed6;
     text-align: center;
     position: relative;
     z-index: 1;
-    overflow-x: hidden
+    overflow-x: hidden;
+    transition: all .2ms;
     
 }
 
@@ -33,6 +53,12 @@ nav a{
     margin: 0 20px;
     color: #b8bed6;
     text-decoration: none;
+}
+
+img {
+    width: 150px;
+    border-radius: 100px;
+    margin: 100px 0 50px
 }
 
 h2 {
@@ -64,17 +90,23 @@ hr {
 }
 
 .project {
+    width: 650px;
     background-color: #d8d1e0;
     color: black;
-    width: 90vw;
-    margin: 10px 20px;
+    /* width: 90vw; */
+    margin: 10px auto 20px;
     padding: 10px 0 10px;
     border-radius: 10px;
+}
+
+.project-list {
+    margin: auto;
 }
 
 .project img {
     width: 70%;
     margin-bottom: 10px;
+    border-radius: 12px;
 }
 
 h3 {
@@ -109,7 +141,7 @@ h3 {
     }
 
     #container {
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     #profile-pic {
@@ -131,176 +163,3 @@ h3 {
 
     
 }
-
-/* .prueba {
-    background-color: red;
-    height: 400px;
-    width: 70vw;
-    margin: 30px auto
-}
-
-span {
-    color: #501782;
-    font-weight: 700;
-}
-
-body {
-    margin: 0;
-    font-family: 'Noto Sans JP', sans-serif;
-    line-height: 1.6;
-}
-
-img {
-    margin: auto;
-    margin-top: 1em;
-    max-width: 90%;
-    display: block;
-}
-
-
-h1,
-h2,
-h3,
-p {
-    margin: 0;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-h1 {
-    line-height: 3;
-    padding-bottom: 1em;
-}
-
-h2 {
-    padding-bottom: .3em;
-    font-weight: 700;
-}
-
-h3 {
-    color: white;
-    font-weight: 700;
-}
-
-.container {
-    width: 85%;
-    max-width: 65em;
-    margin: 0 auto;
-}
-
-.image-container {
-    height: 150px;
-}
-
-.project-description {
-    height: 580;
-}
-
-.btn {
-    display:inline-block;
-    text-decoration: none;
-    color: var(--clr-text, white);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 1.125rem;
-    padding: .5em 1.25em;
-    margin-right: .5em;
-    margin-bottom: .5em;
-    background: var(--clr-accent, #501782);
-    border-radius: .25em;
-    transition: 
-        transform 250ms ease-in-out,
-        opacity 175ms linear
-    
-}
-
-/* #nombre {
-    color: #6CC221;
-} */
-
-/* .btn:hover, .btn:focus {
-    color: var(--clr-text, white);
-    transform: scale(1.1);
-    opacity: .9;
-}
-
-.primary-title {
-    font-size: 4rem;
-    font-size: clamp(3rem, 5vw + 1rem, 4.5rem);
-    line-height: 1.5;
-    text-transform: uppercase;
-}
-
-.titulo-section {
-    text-align: center;
-    font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
-    line-height: 1;
-    color: #17353d;
-}
-
-section {
-    padding: 2em 0;
-}
-
-.spacing>*+* {
-    margin-top: var(--spacer, 2rem);
-}
-
-.hero {
-    color: white;
-    background: rgb(119, 34, 195);
-    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%); */
-    /* background: rgb(34,193,195);
-    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
-    /* background-attachment: fixed;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 5em 0 3em; */
-    /* background-image:
-        url(../img/background-code.jpg),
-        radial-gradient(#111, #444);
-    background-size: 10%;
-    background: whitesmoke; */
-/* } */
-
-/* .split {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    justify-content: center;
-}
-
-.split>* {
-    flex-basis: 30%;
-    min-width: 15em;
-}
-
-#about-me h2 {
-    color: white;
-}
-
-#about-me {
-    color: white;
-    background: rgb(119, 34, 195);
-    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%);
-}
-
-.product {
-    background: rgb(119, 34, 195);
-    background: linear-gradient(0deg, rgba(119, 34, 195, 1) 0%, rgba(117, 131, 158, 1) 71%);
-    text-align: center;
-    border-radius: 10px;
-    padding: 1em;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-a {
-    color: black;
-    /* background: rgba(34,193,195,1); */
-    /* text-decoration: none;
-} */
-
- 
