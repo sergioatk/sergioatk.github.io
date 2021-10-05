@@ -1,4 +1,6 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -6,30 +8,25 @@
     width: 700px;
     margin: auto;
 }
+
 #container {
     width: 700px;
     margin: auto;
 }
 
-iframe {
-    
-}
-
-/* section {
-    #about-me {
-        width: 700px;
-        margin: auto;
-    }
-} */
 body {
     background-color: #082032;
-    color: b8bed6;
+    color: #b8bed6;
     text-align: center;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
     transition: all .2ms;
-    
+}
+
+iframe {
+    width: 70vw;
+    margin: auto;
 }
 
 nav {
@@ -44,21 +41,19 @@ nav {
     left: 0;
     right: 0;
     padding: 10px 0 10px;
-    
-    
 }
 
-nav a{
+nav a {
     width: 120px;
     margin: 0 20px;
     color: #b8bed6;
     text-decoration: none;
 }
 
-img {
+#profile-pic {
     width: 150px;
     border-radius: 100px;
-    margin: 100px 0 50px
+    margin: 150px 0 50px
 }
 
 h2 {
@@ -89,27 +84,29 @@ hr {
     display: none;
 }
 
-.project {
-    width: 650px;
+.projects {
     background-color: #d8d1e0;
-    color: black;
-    /* width: 90vw; */
-    margin: 10px auto 20px;
-    padding: 10px 0 10px;
-    border-radius: 10px;
-}
-
-.project-list {
-    margin: auto;
-}
-
-.project img {
-    width: 70%;
-    margin-bottom: 10px;
     border-radius: 12px;
+    color: black;
+    padding: 1em;
 }
 
-h3 {
+#projects-section {
+    margin: 0 1.8em;
+    border-radius: 30px;
+}
+
+.project-video {
+    width: 70vw;
+}
+
+.project-img {
+    width: 50vw;
+    border-radius: 12px;
+    padding: 5px;
+}
+
+*/ h3 {
     text-transform: uppercase;
     margin-top: 10px;
 }
@@ -128,38 +125,4 @@ h3 {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-}
-@media (max-width: 768px) {
-    nav {
-        height: 50px;
-        justify-content: space-around;
-        align-items: center;
-        font-size: 1.2em;
-    }
-    nav a {
-        width: 30vw;
-    }
-
-    #container {
-        margin-top: 50px;
-    }
-
-    #profile-pic {
-        width: 100px;
-        border-radius: 50px;
-        margin-bottom: 20px;
-    }
-
-    .projects {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    
-
-    .project-button {
-        flex: 50%;
-    }
-
-    
 }
