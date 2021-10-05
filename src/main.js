@@ -1,7 +1,8 @@
-function handleHidden(project = 'pokedex') {
+const firstProjectDisplayed = 'budget';
+
+function handleHidden(project = firstProjectDisplayed) {
     const $projects = document.querySelectorAll('.project');
     const currentProject = document.querySelector(`#${project}`);
-    
 
     $projects.forEach(project => {
         project.classList.add('hidden');
@@ -10,10 +11,11 @@ function handleHidden(project = 'pokedex') {
     currentProject.classList.remove('hidden');
 }
 
-
 document.querySelector('.projects').onclick = (e) => {
     const button = e.target.dataset.name;
-    if (button === 'pokedex') {
+    if (button === 'budget') {
+        handleHidden(button)
+    } else if (button === 'pokedex') {
         handleHidden(button);
     } else if (button === 'simon') {
         handleHidden(button);
