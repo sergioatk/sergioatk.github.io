@@ -1,133 +1,139 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Sergio Tkazek</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
-    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
-    integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
-    crossorigin="anonymous"></script>
-
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
-
-
-  <link rel="stylesheet" type="text/css" media="screen" href="/src/main.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sergio Tkaczek</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='/src/main.css'>
+    <script src='main.js'></script>
 </head>
 
 <body>
 
-  <nav>
-    <a href="#about-me" data-name="about-me">About Me</a>
-    <a href="#projects" data-name="projects">Projects</a>
-    <a href="#contact" data-name="contact">Contact</a>
-  </nav>
-
-  <div id="container">
-    <section class="about-me" id="about-me">
-      <div class="container spacing">
-        <img id="profile-pic" src="./img/sergio-dev.jfif" alt="my picture">
-        <h2 class="titulo-section">About me</h2>
-        <p>Hi! My name is Sergio and I'm a JavaScript Developer. Currently, I'm learning both Frontend and Backend
-          Technologies such as: HTML5, CSS, JS, Node/Express, Template Engine Rendering, Fetch API, Async / Await, ECMA
-          Script Modules, End to End Testing and Unit Testing, among others.</p>
-
-        <p>I love learning new skills and challenging myself to improve every day.</p>
-
-        <p>I'm thrilled about gaining knowledge from others and working in teams as I think when done right, it's the
-          most effective way to achieve goals.</p>
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/7hP2YfGMq9k" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="projects-section">
-      <h2 id="projects">Projects</h2>
-      <p>Click on each project to get more details</p>
-      <div class="projects">
-        <button data-name="pokedex" class="project-button">Pokedex</button>
-        <button data-name="simon" class="project-button">Simon Says</button>
-        <button data-name="crud" class="project-button">CRUD - Clubes</button>
-        <button data-name="exchange" class="project-button">ARS - USD Exchange</button>
-        <button data-name="exchange" class="project-button">ARS - USD Exchange</button>
 
 
-        <div class="project-list">
-          <div id="pokedex" class="project hidden">
-            <h3>Pokedex</h3>
-            <img class="project-img" src="img/screen-pokedex.png" alt="pokedex project picture">
-            <p>An app to look up some Pokemon data.</p>
-            <p>Fetch API, ESM, async/await, DOM manipulation.</p>
 
 
-            <button><a href="https://estudiotkaczek.com/pokedex/" class="btn" target="_blank">POKEDEX</a></button>
-            <button><a href="https://github.com/sergioatk/pokedex" class="btn" target="_blank">GITHUB REPO</a></button>
-
-          </div>
-
-          <div id="simon" class="project hidden">
-            <h3>Simon Says</h3>
-            <img class="project-img" src="img/screen-simon.png" alt="simon says project picture">
-            <p>A memory game to replicate the machine sequence.</p>
-            <p>Ecma Script Modules, Vanilla Js, DOM manipulation.</p>
-            <button><a href="http://estudiotkaczek.com/simon-says/" class="btn" target="_blank">SIMON SAYS</a></button>
-            <button><a href="https://github.com/sergioatk/simon-says" class="btn" target="_blank">GITHUB
-                REPO</a></button>
-          </div>
+    <nav>
+        <a href="#about-me" data-name="about-me">About Me</a>
+        <a href="#projects" data-name="projects">Projects</a>
+        <a href="#contact" data-name="contact">Contact</a>
+    </nav>
 
 
-          <div id="crud" class="project hidden">
-            <h3>CRUD - Clubes</h3>
-            <img class="project-img" src="img/screen-crud-clubes.png" alt="crud clubes project picture">
-            <p>A CRUD aplication. Lets Create, Read, Update and Delete :)</p>
-            <p>Node, Express and Handlebars Template Engine.</p>
 
-            <button><a href="https://github.com/sergioatk/crud-clubes" class="btn" target="_blank">GITHUB
-                REPO</a></button>
-          </div>
+    <div class="row">
+        <div class="col">
+            <section class="about-me" id="about-me">
+                <div class="container spacing">
+                    <img id="profile-pic" src="./img/sergio-dev.jfif" alt="my picture">
+                    <h2 class="titulo-section">About me</h2>
+                    <p>Hi! My name is Sergio and I'm a JavaScript Developer. Currently, I'm learning both Frontend and Backend Technologies such as: HTML5, CSS, JS, Node/Express, Template Engine Rendering, Fetch API, Async / Await, ECMA Script Modules, End
+                        to End Testing and Unit Testing, among others.</p>
 
-          <div id="exchange" class="project hidden">
-            <h3>ARS - USD Exchange</h3>
-            <img class="project-img" src="img/screen-arbolito.png" alt="ars usd exchange project picture">
-            <p>An app to view ARS-USD exchange rates.</p>
-            <p>Node, Express and Handlebars Template Engine. Fetch API, ESM, async/await, DOM manipulation.</p>
+                    <p>I love learning new skills and challenging myself to improve every day.</p>
 
-            <button><a href="https://github.com/sergioatk/arbolito-argentino" class="btn" target="_blank">GITHUB
-                REPO</a></button>
-          </div>
+                    <p>I'm thrilled about gaining knowledge from others and working in teams as I think when done right, it's the most effective way to achieve goals.</p>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7hP2YfGMq9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                </div>
+            </section>
         </div>
-      </div>
-    </section>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <section id="projects-section">
+                <h2 id="projects">Projects</h2>
+                <p>Click on each project to get more details</p>
+                <div class="projects">
+                    <button data-name="budget" class="project-button">CRUD - SQL Budget</button>
+                    <button data-name="pokedex" class="project-button">Pokedex</button>
+                    <button data-name="simon" class="project-button">Simon Says</button>
+                    <button data-name="crud" class="project-button">CRUD - Clubes</button>
+                    <button data-name="exchange" class="project-button">ARS - USD Exchange</button>
+
+
+                    <div class="project-list">
+                        <div id="budget" class="project hidden">
+                            <h3>Personal Budget</h3>
+                            <!-- <img class="project-img" src="splash.it/500/500" alt="budgeting project picture"> -->
+                            <iframe class="project-video" width="560" height="315" src="https://www.youtube.com/embed/Owe5Io4KNfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <p>A CRUD aplication. Manage your personal income and expenses.</p>
+                            <p>PostgreSQL DB. Node, Express Backend. Handlebars Template Engine rendering.</p>
+
+
+
+                            <button><a href="https://github.com/sergioatk/gastos-personales" class="btn" target="_blank">GITHUB REPO</a></button>
+
+                        </div>
+                        <div id="pokedex" class="project hidden">
+                            <h3>Pokedex</h3>
+                            <img class="project-img" src="img/screen-pokedex.png" alt="pokedex project picture">
+                            <p>An app to look up some Pokemon data.</p>
+                            <p>Fetch API, ESM, async/await, DOM manipulation.</p>
+
+
+                            <button><a href="https://estudiotkaczek.com/pokedex/" class="btn" target="_blank">POKEDEX</a></button>
+                            <button><a href="https://github.com/sergioatk/pokedex" class="btn" target="_blank">GITHUB REPO</a></button>
+
+                        </div>
+
+                        <div id="simon" class="project hidden">
+                            <h3>Simon Says</h3>
+                            <img class="project-img" src="img/screen-simon.png" alt="simon says project picture">
+                            <p>A memory game to replicate the machine sequence.</p>
+                            <p>Ecma Script Modules, Vanilla Js, DOM manipulation.</p>
+                            <button><a href="http://estudiotkaczek.com/simon-says/" class="btn" target="_blank">SIMON SAYS</a></button>
+                            <button><a href="https://github.com/sergioatk/simon-says" class="btn" target="_blank">GITHUB
+                    REPO</a></button>
+                        </div>
+
+
+                        <div id="crud" class="project hidden">
+                            <h3>CRUD - Clubes</h3>
+                            <img class="project-img" src="img/screen-crud-clubes.png" alt="crud clubes project picture">
+                            <p>A CRUD aplication. Lets Create, Read, Update and Delete :)</p>
+                            <p>Node, Express and Handlebars Template Engine.</p>
+
+                            <button><a href="https://github.com/sergioatk/crud-clubes" class="btn" target="_blank">GITHUB
+                    REPO</a></button>
+                        </div>
+
+                        <div id="exchange" class="project hidden">
+                            <h3>ARS - USD Exchange</h3>
+                            <img class="project-img" src="img/screen-arbolito.png" alt="ars usd exchange project picture">
+                            <p>An app to view ARS-USD exchange rates.</p>
+                            <p>Node, Express and Handlebars Template Engine. Fetch API, ESM, async/await, DOM manipulation.</p>
+
+                            <button><a href="https://github.com/sergioatk/arbolito-argentino" class="btn" target="_blank">GITHUB
+                    REPO</a></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <hr>
 
     <section id="contact">
-      <button><a href="https://github.com/sergioatk" target="_blank">GitHub</a></button>
-      <button><a href="https://www.linkedin.com/in/sergiotkaczek/" target="_blank">Linkedin</a></button>
+        <button><a href="https://github.com/sergioatk" target="_blank">GitHub</a></button>
+        <button><a href="https://www.linkedin.com/in/sergiotkaczek/" target="_blank">Linkedin</a></button>
 
     </section>
 
-  </div>
 
-  <script src="src/main.js"></script>
 
+
+    <script src="src/main.js"></script>
 
 </body>
 
