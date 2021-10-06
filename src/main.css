@@ -34,7 +34,7 @@ nav {
     display: flex;
     flex-flow: row;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.25em;
     justify-content: end;
     position: fixed;
     top: 0;
@@ -125,4 +125,8 @@ hr {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+#about-me-nav {
+    width: 30%;
 }
